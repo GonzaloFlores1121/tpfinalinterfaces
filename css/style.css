@@ -61,19 +61,19 @@ header {
 }
 
 input[type="text"] {
-    font-size: 1.3rem; /* Ajusta este valor para cambiar el tamaño de la fuente del input */
-    height: 50px; /* Ajusta este valor para cambiar la altura del input */
+    font-size: 1.3rem;
+    height: 50px;
 }
 .small-card-body {
-    padding: 0.4rem; /* Ajusta este valor para cambiar el tamaño del card body */
+    padding: 0.4rem;
 }
 .genre-card {
-    width: 100%; /* Ajusta este valor para cambiar el ancho de las tarjetas */
-    margin: auto; /* Centra las tarjetas */
+    width: 100%;
+    margin: auto;
 }
 .small-card-body h6 {
-    font-size: 0.8rem; /* Ajusta este valor para cambiar el tamaño del texto */
-    opacity: 0.7; /* Ajusta este valor para cambiar la transparencia del texto */
+    font-size: 0.8rem;
+    opacity: 0.7;
 }
 .genre-card {
     margin-bottom: 10px;
@@ -94,5 +94,5 @@ input[type="text"] {
 }
 
 footer {
-    padding: 100px 0; /* Reduce este valor para hacer el footer más pequeño */
+    padding: 100px 0; 
 }
