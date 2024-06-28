@@ -1,0 +1,98 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    background-color: #ebdacc;
+}
+
+header {
+    background-color: #945737;
+}
+
+.color-claro {
+    color: #ebdacc;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: #945737;
+}
+
+.dropdown-menu {
+    background-color: #ebdacc;
+}
+
+.dropdown-item {
+    color: #945737;
+}
+
+.dropdown-item:hover {
+    background-color: #945737;
+    color: #ebdacc;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    position: sticky;
+}
+.filter-container {
+    margin-left: 10px;
+    position: relative;
+}
+.filter-options {
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1;
+}
+.filter-container:hover .filter-options {
+    display: block;
+}
+.book-container {
+    margin-top: 30px;
+}
+.book-title {
+    text-align: center;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    font-size: 1.3rem; /* Ajusta este valor para cambiar el tamaño de la fuente del input */
+    height: 50px; /* Ajusta este valor para cambiar la altura del input */
+}
+.small-card-body {
+    padding: 0.4rem; /* Ajusta este valor para cambiar el tamaño del card body */
+}
+.genre-card {
+    width: 100%; /* Ajusta este valor para cambiar el ancho de las tarjetas */
+    margin: auto; /* Centra las tarjetas */
+}
+.small-card-body h6 {
+    font-size: 0.8rem; /* Ajusta este valor para cambiar el tamaño del texto */
+    opacity: 0.7; /* Ajusta este valor para cambiar la transparencia del texto */
+}
+.genre-card {
+    margin-bottom: 10px;
+}
+.small-card-body {
+    padding: 10px;
+    text-align: center;
+}
+.alphabet-filter .btn.active {
+    background-color: #0d6efd;
+    color: white;
+}
+.literature-highlight {
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+footer {
+    padding: 100px 0; /* Reduce este valor para hacer el footer más pequeño */
+}
