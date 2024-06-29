@@ -33,7 +33,7 @@ header {
     display: flex;
     align-items: center;
     margin-top: 20px;
-    position: sticky;
+
 }
 .filter-container {
     margin-left: 10px;
@@ -93,6 +93,27 @@ input[type="text"] {
     margin-bottom: 20px;
 }
 
+.book-image {
+    width: 200px;
+    height: 300px;
+}
 footer {
-    padding: 100px 0; 
+    padding: 100px 0;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: gray;
+}
+
+
+.carousel-item .row {
+    align-items: center;
+}
+.carousel-item .col-md-2 {
+    margin: 5px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto;
+    bottom:10px;
 }
