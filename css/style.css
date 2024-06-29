@@ -1,15 +1,59 @@
 html, body {
     margin: 0;
-    height: 100%;
-    background-color: #ebdacc;
+    height: 100%;   
+    display: flex;
+    flex-direction: column;
+    font-family: "Lora", serif;
+    background-color: #ebdacc; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
 }
 
 header {
     background-color: #945737;
 }
 
-.color-claro {
+main {
+    flex: 1;
+    margin-top: 7.5%;
+}
+
+.text-color-1 {
     color: #ebdacc;
+}
+
+.text-color-2 {
+    color: #945737;
+}
+
+.text-color-3 {
+    color: #8A3119;
+}
+
+.text-color-4 {
+    color: #5A0F19;
+}
+
+.bg-color-1 {
+    background-color: #ebdacc;
+}
+
+.bg-color-2 {
+    background-color: #945737;
+}
+
+.bg-color-3 {
+    background-color: #8A3119;
+}
+
+.bg-color-4 {
+    background-color: #5A0F19;
+}
+
+.container-bg-transparent {
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .bi {
@@ -17,8 +61,12 @@ header {
     fill: #945737;
 }
 
+.dropdown-toggle::after {
+    color: #ebdacc;
+}
+
 .dropdown-menu {
-    background-color: #ebdacc;
+    background-color: #ebdacc; 
 }
 
 .dropdown-item {
@@ -29,6 +77,32 @@ header {
     background-color: #945737;
     color: #ebdacc;
 }
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.33);
+}
+
+.form-signin {
+    max-width: 360px;
+    padding: 1rem;
+}
+  
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+  
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+  
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
 .search-container {
     display: flex;
     align-items: center;
