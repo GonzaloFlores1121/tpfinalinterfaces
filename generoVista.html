@@ -7,27 +7,34 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
 </head>
 <body>
 
 
-<header class="p-2 mb-3 border-bottom">
+<header class="border-bottom border-secondary">
     <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <a href="#" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
                 <img src="img/LOGO-HEADER.png" alt="logo-header" width="80" height="80">
-                <h3 class="ms-3 fw-bold color-claro">BIBLIOTECA VIRTUAL</h3>
+                <h3 class="ms-3 fw-bold text-color-1">Biblioteca Virtual</h3>
             </a>
             <div class="dropdown text-end d-flex flex-wrap justify-content-center align-items-center ms-auto">
-                <h6 class="fw-bold me-3 color-claro">Rodolfo Gutierrez</h6>
+                <h6 class="fw-bold me-3 text-color-1">Rodolfo Gutierrez</h6>
                 <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="img/SprightBlue-MADU-EN-VG-artwork.png" alt="profile-picture" width="32" height="32" class="rounded-circle">
                 </a>
-                <ul class="dropdown-menu text-small">
-                    <li><a class="dropdown-item" href="#">Mi Perfil</a></li>
+                <ul class="dropdown-menu gap-1 p-2 rounded-3 mx-0 border-0 shadow w-220px">
+                    <li><a class="dropdown-item rounded-2" href="#">Mi Perfil</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                    <li><a class="dropdown-item rounded-2" href="#">Cerrar sesión</a></li>
                 </ul>
             </div>
         </div>
@@ -44,7 +51,7 @@
         </ol>
     </nav>
     <br> <br>
-    <h1>Ciencia ficción</h1>
+    <h1 class="slide-in">Ciencia ficción</h1>
 </div>
 
 <div class="container mt-5">
@@ -56,6 +63,7 @@
             </div>
         </div>
     </div>
+</div>
     <div class="row mt-3">
         <div class="col-md-12 text-center">
             <div class="btn-group alphabet-filter" role="group">
@@ -68,52 +76,38 @@
             </div>
         </div>
     </div>
-    <div class="row mt-3">
-        <div class="col-md-10 offset-md-1">
-            <div class="row">
-                <div class="col-md-4 mb-3">
-                    <div class="card genre-card">
-                        <a href="#">
-                            <div class="d-flex justify-content-center">
-                        <img src="img/427f18ddc9cb21b5d943a63517df875a.webp" class="img-fluid book-image" alt="Libro 1">
-                            </div>
-                        <div class="card-body small-card-body">
-                            <h6 class="card-title text-center">Alicia en el país de las maravillas</h6>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card genre-card">
-                        <a href="#">
-                            <div class="d-flex justify-content-center">
-                            <img src="img/a%20sangre%20fria.jpeg" class="img-fluid book-image" alt="Libro 1">
-                            </div>
-                            <div class="card-body small-card-body">
-                                <h6 class="card-title text-center">A sangre fría</h6>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card genre-card">
-                        <a href="#">
-                            <div class="d-flex justify-content-center">
-                            <img src="img/amazing_stroies.jpg" class="img-fluid book-image" alt="Libro 1">
-                            </div>
-                            <div class="card-body small-card-body">
-                                <h6 class="card-title text-center">Amazing stories</h6>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </div>
 </div>
 
+
+    <div class="container mt-5">
+        <h2 class="mt-5 slide-in">Seccion:  A</h2>
+        <div class="row book-container">
+            <div class="col-md-3 text-center">
+                <a href="#">
+                    <img src="img/427f18ddc9cb21b5d943a63517df875a.webp" class="img-fluid book-image" alt="Book 1">
+                    <p class="book-title">Alicia en el pais de las maravillas</p>
+                </a>
+            </div>
+            <div class="col-md-3 text-center">
+                <a href="#">
+                    <img src="img/a%20sangre%20fria.jpeg" class="img-fluid book-image" alt="Book 2">
+                    <p class="book-title">A sangre fria</p>
+                </a>
+            </div>
+            <div class="col-md-3 text-center">
+                <a href="#">
+                    <img src="img/amazing_stroies.jpg" class="img-fluid book-image" alt="Book 3">
+                    <p class="book-title">Amazin stories</p>
+                </a>
+            </div>
+            <div class="col-md-3 text-center">
+                <a href="#">
+                    <img src="img/alasdesangre.jpeg" class="img-fluid book-image" alt="Book 4">
+                    <p class="book-title">Alas de sangre</p>
+                </a>
+            </div>
+    </div>
+    </div>
 
 <footer class="container-fluid px-5">
     <div class="d-flex flex-wrap justify-content-between align-items-center py-1 my-4 border-top border-dark border-color">
@@ -132,5 +126,6 @@
 </footer>
 
 
+</div>
 </body>
 </html>
