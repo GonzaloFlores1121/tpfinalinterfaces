@@ -1,5 +1,6 @@
 html, body {
     margin: 0;
+    padding: 0;
     height: 100%;   
     display: flex;
     flex-direction: column;
@@ -83,7 +84,6 @@ main {
 }
 
 .form-signin {
-    max-width: 360px;
     padding: 1rem;
 }
   
@@ -102,6 +102,18 @@ main {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+
+.img-fluid {
+    height: 100vh;
+    object-fit: cover;
+}
+
+.zoom:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+
 
 .search-container {
     display: flex;
@@ -248,9 +260,18 @@ input[type="text"]:focus {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .scroll-indicator {
         display: block;
     }
+
+    main {
+        margin-top: 25%;
+    }
+
+    .profile-name {
+        display: none;
+    }
+
 }
 

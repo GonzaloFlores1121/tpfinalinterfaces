@@ -28,30 +28,30 @@
     </symbol>
 </svg>
 
-<header class="border-bottom border-secondary fixed-top">
+<header class="border-bottom border-secondary fixed-top mb-auto">
     <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="#" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+            <a href="HOME.html" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
                 <img src="img/LOGO-HEADER.png" alt="logo-header" width="80" height="80">
                 <h3 class="ms-3 fw-bold text-color-1">Biblioteca Virtual</h3>
             </a>
             <div class="dropdown text-end d-flex flex-wrap justify-content-center align-items-center ms-auto">
-                <h6 class="fw-bold me-3 text-color-1">Rodolfo Gutierrez</h6>
+                <h6 class="fw-bold me-3 text-color-1 profile-name">Rodolfo Gutierrez</h6>
                 <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="img/SprightBlue-MADU-EN-VG-artwork.png" alt="profile-picture" width="32" height="32" class="rounded-circle">
                 </a>
                 <ul class="dropdown-menu gap-1 p-2 rounded-3 mx-0 border-0 shadow w-220px">
-                    <li><a class="dropdown-item rounded-2" href="#">Mi Perfil</a></li>
+                    <li><a class="dropdown-item rounded-2" href="PROFILE.html">Mi Perfil</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item rounded-2" href="#">Cerrar sesión</a></li>
+                    <li><a class="dropdown-item rounded-2" href="LOGIN.html">Cerrar sesión</a></li>
                 </ul>
             </div>
         </div>
     </div>
 </header>
 
-<main class="container-fluid mb-auto">
-
+<main class="container-fluid mb-5">
+    <h2 class="fw-bold text-center my-4">Libros más descargados</h2>
     <div id="myCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -60,32 +60,32 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block" src="img/CAROUSEL-IMG-1.png" alt="carousel-img-1" width="100%">
+                <img class="d-block img-fluid" src="img/CAROUSEL-IMG-1.png" alt="carousel-img-1" width="100%">
                 <div class="container">
                     <div class="carousel-caption text-start p-3">
                         <h3 class="fw-bold">El Escarabajo de Oro</h3>
                         <p class="opacity-75">"El Escarabajo de Oro" de Edgar Allan Poe cuenta la historia de William Legrand y su búsqueda obsesiva de un tesoro perdido, desencadenada por el descubrimiento de un escarabajo dorado.</p>
-                        <p><a class="btn btn-lg btn-secondary" href="#">Ver Detalles &raquo;</a></p>
+                        <p><a class="btn btn-secondary" href="detallesLibro.html">Ver Detalles &raquo;</a></p>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block" src="img/CAROUSEL-IMG-2.png" alt="carousel-img-2" width="100%">
+                <img class="d-block img-fluid" src="img/CAROUSEL-IMG-2.png" alt="carousel-img-2" width="100%">
                 <div class="container">
                     <div class="carousel-caption p-3">
                         <h3 class="fw-bold">La Ilíada</h3>
                         <p>"La Ilíada" de Homero relata la Guerra de Troya, centrada en el enfrentamiento entre griegos y troyanos.</p>
-                        <p><a class="btn btn-lg btn-secondary" href="#">Ver Detalles &raquo;</a></p>
+                        <p><a class="btn btn-secondary" href="detallesLibro.html">Ver Detalles &raquo;</a></p>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block" src="img/CAROUSEL-IMG-3.png" alt="carousel-img-3" width="100%">
+                <img class="d-block img-fluid" src="img/CAROUSEL-IMG-3.png" alt="carousel-img-3" width="100%">
                 <div class="container">
                     <div class="carousel-caption text-end p-3">
-                        <h1 class="fw-bold">Don Quijote de la Mancha</h1>
+                        <h3 class="fw-bold">Don Quijote de la Mancha</h3>
                         <p>"Don Quijote de la Mancha" de Miguel de Cervantes es una novela que narra las aventuras de un caballero soñador y su fiel escudero Sancho Panza. </p>
-                        <p><a class="btn btn-lg btn-secondary" href="#">Ver Detalles &raquo;</a></p>
+                        <p><a class="btn btn-secondary" href="detallesLibro.html">Ver Detalles &raquo;</a></p>
                     </div>
                 </div>
             </div>
@@ -100,105 +100,107 @@
         </button>
     </div>
 
-    <div class="container my-5">
+    <div class="container mt-5">
+        <h2 class="text-center mb-5">Mis Asignaturas</h2>
         <div class="row mb-4">
             <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center">
-                <img class="border border-2 border-secondary rounded-circle" src="img/matematicas.jpg" alt="matematicas" width="140" height="140">
+                <img class="border border-2 border-secondary rounded-circle zoom mb-3" src="img/matematicas.jpg" alt="matematicas" width="140" height="140">
                 <h3 class="fw-normal">Matemáticas</h3>
                 <p>"Fórmulas y gráficos: Explora el mundo de los números y las relaciones matemáticas."</p>
-                <p><a class="btn btn-secondary" href="#">Ver Cátalogo &raquo;</a></p>
+                <p><a class="btn btn-secondary" href="busquedaLibros.html">Ver Cátalogo &raquo;</a></p>
             </div>
             <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center">
-                <img class="border border-2 border-secondary rounded-circle" src="img/literatura.jpg" alt="literatura" width="140" height="140">
+                <img class="border border-2 border-secondary rounded-circle zoom mb-3" src="img/literatura.jpg" alt="literatura" width="140" height="140">
                 <h3 class="fw-normal">Literatura</h3>
                 <p>"Escritores y obras clásicas: Descubre la riqueza de la literatura a través de grandes autores y sus obras."</p>
-                <p><a class="btn btn-secondary" href="#">Ver Cátalogo &raquo;</a></p>
+                <p><a class="btn btn-secondary" href="busquedaLibros.html">Ver Cátalogo &raquo;</a></p>
             </div>
             <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center">
-                <img class="border border-2 border-secondary rounded-circle" src="img/historia.jpg" alt="historia" width="140" height="140">
+                <img class="border border-2 border-secondary rounded-circle zoom mb-3" src="img/historia.jpg" alt="historia" width="140" height="140">
                 <h3 class="fw-normal">Historia</h3>
                 <p>"Eventos y culturas del pasado: Viaja en el tiempo a través de los momentos clave de la historia humana."</p>
-                <p><a class="btn btn-secondary" href="#">Ver Cátalogo &raquo;</a></p>
+                <p><a class="btn btn-secondary" href="busquedaLibros.html">Ver Cátalogo &raquo;</a></p>
             </div>
         </div>
         <div class="row mb-4">
             <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center">
-                <img class="border border-2 border-secondary rounded-circle" src="img/geografia.jpg" alt="geografia" width="140" height="140">
+                <img class="border border-2 border-secondary rounded-circle zoom mb-3" src="img/geografia.jpg" alt="geografia" width="140" height="140">
                 <h3 class="fw-normal">Geografía</h3>
                 <p>"Mapas y paisajes: Descubre la diversidad geográfica de nuestro planeta y sus fenómenos naturales."</p>
-                <p><a class="btn btn-secondary" href="#">Ver Cátalogo &raquo;</a></p>
+                <p><a class="btn btn-secondary" href="busquedaLibros.html">Ver Cátalogo &raquo;</a></p>
             </div>
             <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center">
-                <img class="border border-2 border-secondary rounded-circle" src="img/fisica.jpg" alt="fisica" width="140" height="140">
+                <img class="border border-2 border-secondary rounded-circle zoom mb-3" src="img/fisica.jpg" alt="fisica" width="140" height="140">
                 <h3 class="fw-normal">Física</h3>
                 <p>"Leyes físicas y experimentos: Desde la mecánica hasta la óptica, descubre cómo funciona nuestro mundo."</p>
-                <p><a class="btn btn-secondary" href="#">Ver Cátalogo &raquo;</a></p>
+                <p><a class="btn btn-secondary" href="busquedaLibros.html">Ver Cátalogo &raquo;</a></p>
             </div>
             <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center">
-                <img class="border border-2 border-secondary rounded-circle" src="img/quimica.jpg" alt="quimica" width="140" height="140">
+                <img class="border border-2 border-secondary rounded-circle zoom mb-3" src="img/quimica.jpg" alt="quimica" width="140" height="140">
                 <h3 class="fw-normal">Química</h3>
                 <p>"Reacciones y estructuras moleculares: Aprende sobre la composición de la materia y sus transformaciones."</p>
-                <p><a class="btn btn-secondary" href="#">Ver Cátalogo &raquo;</a></p>
+                <p><a class="btn btn-secondary" href="busquedaLibros.html">Ver Cátalogo &raquo;</a></p>
             </div>
         </div>
         <div class="row mb-4">
             <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center">
-                <img class="border border-2 border-secondary rounded-circle" src="img/biologia.jpg" alt="biologia" width="140" height="140">
+                <img class="border border-2 border-secondary rounded-circle zoom mb-3" src="img/biologia.jpg" alt="biologia" width="140" height="140">
                 <h3 class="fw-normal">Biología</h3>
                 <p>"Células y ecosistemas: Explora la diversidad de la vida desde las células hasta los ecosistemas globales."</p>
-                <p><a class="btn btn-secondary" href="#">Ver Cátalogo &raquo;</a></p>
+                <p><a class="btn btn-secondary" href="busquedaLibros.html">Ver Cátalogo &raquo;</a></p>
             </div>
             <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center">
-                <img class="border border-2 border-secondary rounded-circle" src="img/ingles.jpg" alt="ingles" width="140" height="140">
+                <img class="border border-2 border-secondary rounded-circle zoom mb-3" src="img/ingles.jpg" alt="ingles" width="140" height="140">
                 <h3 class="fw-normal">Inglés</h3>
                 <p>"Aprende el idioma y la cultura inglesa: Explora la gramática, el vocabulario y la cultura de países de habla inglesa."</p>
-                <p><a class="btn btn-secondary" href="#">Ver Cátalogo &raquo;</a></p>
+                <p><a class="btn btn-secondary" href="busquedaLibros.html">Ver Cátalogo &raquo;</a></p>
             </div>
             <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center">
-                <img class="border border-2 border-secondary rounded-circle" src="img/arte.jpg" alt="arte" width="140" height="140">
+                <img class="border border-2 border-secondary rounded-circle zoom mb-3" src="img/arte.jpg" alt="arte" width="140" height="140">
                 <h3 class="fw-normal">Arte</h3>
                 <p>"Obras y movimientos artísticos: Explora la expresión creativa a través de diferentes estilos y épocas."</p>
-                <p><a class="btn btn-secondary" href="#">Ver Cátalogo &raquo;</a></p>
+                <p><a class="btn btn-secondary" href="busquedaLibros.html">Ver Cátalogo &raquo;</a></p>
             </div>
         </div>
         <div class="row mb-4">
             <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center">
-                <img class="border border-2 border-secondary rounded-circle" src="img/educacion fisica.jpg" alt="educacion-fisica" width="140" height="140">
+                <img class="border border-2 border-secondary rounded-circle zoom mb-3" src="img/educacion fisica.jpg" alt="educacion-fisica" width="140" height="140">
                 <h3 class="fw-normal">Educación Física</h3>
                 <p>"Deportes y salud: Fomenta un estilo de vida activo y saludable a través del ejercicio y el deporte."</p>
-                <p><a class="btn btn-secondary" href="#">Ver Cátalogo &raquo;</a></p>
+                <p><a class="btn btn-secondary" href="busquedaLibros.html">Ver Cátalogo &raquo;</a></p>
             </div>
             <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center">
-                <img class="border border-2 border-secondary rounded-circle" src="img/musica.jpg" alt="musica" width="140" height="140">
+                <img class="border border-2 border-secondary rounded-circle zoom mb-3" src="img/musica.jpg" alt="musica" width="140" height="140">
                 <h3 class="fw-normal">Música</h3>
                 <p>"Notas y melodías: Descubre la música a través de partituras, instrumentos y composiciones icónicas."</p>
-                <p><a class="btn btn-secondary" href="#">Ver Cátalogo &raquo;</a></p>
+                <p><a class="btn btn-secondary" href="busquedaLibros.html">Ver Cátalogo &raquo;</a></p>
             </div>
             <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center">
-                <img class="border border-2 border-secondary rounded-circle" src="img/computacion.jpg" alt="computacion" width="140" height="140">
+                <img class="border border-2 border-secondary rounded-circle zoom mb-3" src="img/computacion.jpg" alt="computacion" width="140" height="140">
                 <h3 class="fw-normal">Computación</h3>
                 <p>"Domina herramientas como Word, PowerPoint, Excel y más: Aprende habilidades fundamentales para la comunicación y gestión de datos."</p>
-                <p><a class="btn btn-secondary" href="#">Ver Cátalogo &raquo;</a></p>
+                <p><a class="btn btn-secondary" href="busquedaLibros.html">Ver Cátalogo &raquo;</a></p>
             </div>
         </div>
     </div>
 </main>
 
-
 <div class="container-fluid px-5 mt-auto">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top border-dark">
         <div class="col-md-6 d-flex align-items-center">
-            <a href="#" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <a href="HOME.html" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
                 <img src="img/LOGO-FOOTER.png" alt="logo-footer" width="80" height="80">
             </a>
             <span class="mb-3 mb-md-0 text-body-secondary ms-3">&copy; Biblioteca Virtual, Materias Interactivas en Linea</span>
         </div>
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-            <li class="ms-3"><a href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-            <li class="ms-3"><a href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
-        </ul>
-    </footer>
+        <div class="col-md-4 d-flex justify-content-center justify-content-md-end">
+            <ul class="nav list-unstyled">
+                <li class="ms-3"><a href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+                <li class="ms-3"><a href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+                <li class="ms-3"><a href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+            </ul>               
+        </div>
+    </footer>        
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
