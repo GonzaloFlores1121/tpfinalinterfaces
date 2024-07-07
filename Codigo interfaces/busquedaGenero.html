@@ -16,138 +16,157 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<header class="border-bottom border-secondary">
-    <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="#" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
-                <img src="img/LOGO-HEADER.png" alt="logo-header" width="80" height="80">
-                <h3 class="ms-3 fw-bold text-color-1">Biblioteca Virtual</h3>
-            </a>
-            <div class="dropdown text-end d-flex flex-wrap justify-content-center align-items-center ms-auto">
-                <h6 class="fw-bold me-3 text-color-1">Rodolfo Gutierrez</h6>
-                <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="img/SprightBlue-MADU-EN-VG-artwork.png" alt="profile-picture" width="32" height="32" class="rounded-circle">
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="facebook" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+        </symbol>
+        <symbol id="instagram" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+        </symbol>
+        <symbol id="twitter" viewBox="0 0 16 16">
+            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+        </symbol>
+    </svg>
+    
+    <!-- Header -->
+    <header class="border-bottom border-secondary fixed-top">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="HOME.html" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+                    <img src="img/LOGO-HEADER.png" alt="logo-header" width="80" height="80">
+                    <h3 class="ms-3 fw-bold text-color-1">Biblioteca Virtual</h3>
                 </a>
-                <ul class="dropdown-menu gap-1 p-2 rounded-3 mx-0 border-0 shadow w-220px">
-                    <li><a class="dropdown-item rounded-2" href="#">Mi Perfil</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item rounded-2" href="#">Cerrar sesión</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</header>
-<div class="container pt-5">
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Literatura</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Género</li>
-        </ol>
-    </nav>
-    <br> <br>
-    <h1 class="mb-4 slide-in">Géneros</h1>
-</div>
-
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-md-6 offset-md-3">
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Buscar por título">
-                <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="row justify-content-center scrolling-wrapper">
-        <div class="col-md-2">
-            <div class="card genre-card">
-                <div class="card-body small-card-body">
-                    <h6 class="card-title text-center"><a href="#" class="genre-link">Romántico</a></h6>
+                <div class="dropdown text-end d-flex flex-wrap justify-content-center align-items-center ms-auto">
+                    <h6 class="fw-bold me-3 text-color-1 profile-name">Rodolfo Gutierrez</h6>
+                    <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="img/SprightBlue-MADU-EN-VG-artwork.png" alt="profile-picture" width="32" height="32" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu gap-1 p-2 rounded-3 mx-0 border-0 shadow w-220px">
+                        <li><a class="dropdown-item rounded-2" href="PROFILE.html">Mi Perfil</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item rounded-2" href="LOGIN.html">Cerrar sesión</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="col-md-2">
-            <div class="card genre-card">
-                <div class="card-body small-card-body">
-                    <h6 class="card-title text-center"><a href="#" class="genre-link">Aventura</a></h6>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-2">
-            <div class="card genre-card">
-                <div class="card-body small-card-body">
-                    <h6 class="card-title text-center"><a href="#" class="genre-link">Ciencia Ficción</a></h6>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-2">
-            <div class="card genre-card">
-                <div class="card-body small-card-body">
-                    <h6 class="card-title text-center"><a href="#" class="genre-link">Acción</a></h6>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-2">
-            <div class="card genre-card">
-                <div class="card-body small-card-body">
-                    <h6 class="card-title text-center"><a href="#" class="genre-link">Fantasía</a></h6>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br>
+    </header>
 
-<div class="container mt-5">
-    <h2 class="mt-5 slide-in">Libros más leídos</h2>
-    <div class="row book-container">
-        <div class="col-md-3 text-center">
-            <a href="#">
-                <img src="img/caperucita.jpeg" class="img-fluid book-image" alt="Book 1">
-                <p class="book-title">La caperucita</p>
-            </a>
+    <main class="container">
+        <div class="container pt-5">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Literatura</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Género</li>
+                </ol>
+            </nav>
+            <br> <br>
+            <h1 class="mb-4 slide-in">Géneros</h1>
         </div>
-        <div class="col-md-3 text-center">
-            <a href="#">
-                <img src="img/donquijote.jpg" class="img-fluid book-image" alt="Book 2">
-                <p class="book-title">Don Quijote</p>
-            </a>
+        
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Buscar por título">
+                        <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <div class="row justify-content-center scrolling-wrapper">
+                <div class="col-md-2">
+                    <div class="card genre-card">
+                        <div class="card-body small-card-body">
+                            <h6 class="card-title text-center"><a href="#" class="genre-link">Romántico</a></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card genre-card">
+                        <div class="card-body small-card-body">
+                            <h6 class="card-title text-center"><a href="#" class="genre-link">Aventura</a></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card genre-card">
+                        <div class="card-body small-card-body">
+                            <h6 class="card-title text-center"><a href="#" class="genre-link">Ciencia Ficción</a></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card genre-card">
+                        <div class="card-body small-card-body">
+                            <h6 class="card-title text-center"><a href="#" class="genre-link">Acción</a></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card genre-card">
+                        <div class="card-body small-card-body">
+                            <h6 class="card-title text-center"><a href="#" class="genre-link">Fantasía</a></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        
+        <div class="container mt-5">
+            <h2 class="mt-5 slide-in">Libros más leídos</h2>
+            <div class="row book-container">
+                <div class="col-md-3 text-center">
+                    <a href="#">
+                        <img src="img/caperucita.jpeg" class="img-fluid book-image" alt="Book 1">
+                        <p class="book-title">La caperucita</p>
+                    </a>
+                </div>
+                <div class="col-md-3 text-center">
+                    <a href="#">
+                        <img src="img/donquijote.jpg" class="img-fluid book-image" alt="Book 2">
+                        <p class="book-title">Don Quijote</p>
+                    </a>
+                </div>
+                <div class="col-md-3 text-center">
+                    <a href="#">
+                        <img src="img/hamlet.jpeg" class="img-fluid book-image" alt="Book 3">
+                        <p class="book-title">Hamlet</p>
+                    </a>
+                </div>
+                <div class="col-md-3 text-center">
+                    <a href="#">
+                        <img src="img/martinfierro.jpg" class="img-fluid book-image" alt="Book 4">
+                        <p class="book-title">Martin Fierro</p>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="col-md-3 text-center">
-            <a href="#">
-                <img src="img/hamlet.jpeg" class="img-fluid book-image" alt="Book 3">
-                <p class="book-title">Hamlet</p>
-            </a>
         </div>
-        <div class="col-md-3 text-center">
-            <a href="#">
-                <img src="img/martinfierro.jpg" class="img-fluid book-image" alt="Book 4">
-                <p class="book-title">Martin Fierro</p>
-            </a>
+        
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
         </div>
-    </div>
-</div>
-</div>
+    </main>
 
-<div class="scroll-indicator">
-    <i class="fas fa-chevron-down"></i>
-</div>
-<div class="container-fluid px-5 mt-5">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-1 my-4 border-top border-dark">
-        <div class="col-md-4 d-flex align-items-center">
-            <a href="#" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+<!-- Footer -->
+<div class="container-fluid px-5 mt-auto">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top border-dark">
+        <div class="col-md-6 d-flex align-items-center">
+            <a href="HOME.html" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
                 <img src="img/LOGO-FOOTER.png" alt="logo-footer" width="80" height="80">
             </a>
-            <span class="mb-3 mb-md-0 text-body-secondary ms-3">&copy; 2024 Biblioteca Virtual</span>
+            <span class="mb-3 mb-md-0 text-body-secondary ms-3">&copy; Biblioteca Virtual, Materias Interactivas en Linea</span>
         </div>
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
-        </ul>
-    </footer>
+        <div class="col-md-4 d-flex justify-content-center justify-content-md-end">
+            <ul class="nav list-unstyled">
+                <li class="ms-3"><a href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+                <li class="ms-3"><a href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+                <li class="ms-3"><a href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+            </ul>               
+        </div>
+    </footer>        
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
